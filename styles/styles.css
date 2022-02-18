@@ -674,11 +674,8 @@ body {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 1056px;
-  margin-left: 31px;
-  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3,339px);
 }
 
 .hotel-card {
