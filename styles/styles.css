@@ -607,9 +607,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
-  margin-top: 50px;
-  margin-left: 71px;
-  margin-bottom: 50px;
+  margin: 0;
   margin-right: 192px;
 }
 
@@ -628,12 +626,15 @@ body {
 
 .sorting-hotel {
   display: flex;
+  min-width: 1057px;
+  margin-top: 44px;
+  margin-left: 31px;
+  margin-bottom: 53px;
 }
 
 .buttons-show-wrapper {
   display: flex;
   align-items: flex-start;
-  margin-top: 44px;
   margin-left: 81px;
 }
 
@@ -676,14 +677,13 @@ body {
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3,339px);
+  gap: 10px;
+  margin-bottom: 34px;
+  margin-left: 31px;
 }
 
 .hotel-card {
-  width: 339px;
-  height: 438px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 20px;
+
 }
 
 .hotel-card-link {
