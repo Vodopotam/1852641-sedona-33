@@ -745,36 +745,30 @@ body {
   width: 140.94px;
 }
 
-.hotel-list .hotel-card:nth-child(1) .hotel-card-stars {
-  background-image: url("../images/stars-four.svg");
-  background-repeat: no-repeat;
+.hotel-card-stars {
   display: block;
   height: 17px;
   margin-top: 26px;
+}
+
+.hotel-list .hotel-card:nth-child(1) .hotel-card-stars {
+  background-image: url("../images/stars-four.svg");
+  background-repeat: no-repeat;
 }
 
 .hotel-list .hotel-card:nth-child(2) .hotel-card-stars {
   background-image: url("../images/stars-three.svg");
   background-repeat: no-repeat;
-  display: block;
-  height: 17px;
-  margin-top: 26px;
 }
 
 .hotel-list .hotel-card:nth-child(3) .hotel-card-stars {
   background-image: url("../images/stars-two.svg");
   background-repeat: no-repeat;
-  display: block;
-  height: 17px;
-  margin-top: 26px;
 }
 
 .hotel-list .hotel-card:nth-child(4) .hotel-card-stars {
   background-image: url("../images/stars-two.svg");
   background-repeat: no-repeat;
-  display: block;
-  height: 17px;
-  margin-top: 26px;
 }
 
 .hotel-card-rating {
