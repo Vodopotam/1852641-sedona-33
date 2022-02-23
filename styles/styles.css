@@ -54,6 +54,7 @@ body {
 
 .page-logo {
   margin-right: 30px;
+  z-index: 1;
 }
 
 .navigation {
@@ -135,6 +136,7 @@ body {
 .main-container {
   flex-grow: 1;
   padding-top: 51px;
+  margin-top: -5px;
 }
 
 .page-container {
@@ -157,6 +159,16 @@ body {
   align-items: center;
   padding-top: 63px;
   padding-bottom: 79px;
+}
+
+.advantages::before  {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../images/vector-bottom.svg");
+  background-repeat: no-repeat;
+  margin-top: -55px;
 }
 
 .advantages-header > .advantages-title {
