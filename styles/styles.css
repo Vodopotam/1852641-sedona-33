@@ -61,6 +61,27 @@ body {
   display: flex;
 }
 
+.navigation-item-counter {
+  position: absolute;
+  bottom: 51px;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  line-height: 13px;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/green-ellipse .svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-item > .navigation-item-counter {
+  position: relative;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -493,6 +514,7 @@ body {
   height: 60px;
   padding: 0;
   border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
 }
 
 .newsletter-button:hover  {
@@ -667,13 +689,12 @@ body {
   height: 68px;
   margin: 0;
   margin-left: 71px;
-  margin-bottom: 5px;
 }
 
 .breadcrumbs {
   display: flex;
   align-items: center;
-  margin-left: 73px;
+  margin-left: 65px;
   margin-bottom: 45px;
 }
 
@@ -682,30 +703,58 @@ body {
   text-decoration: none;
 }
 
+.breadcrumbs-link:hover {
+  color: #ffffff;
+  opacity: 0.6;
+  fill-opacity: 0.6;;
+ }
+
+.breadcrumbs-link:active {
+  color: #ffffff;
+  opacity: 0.3;
+  fill-opacity: 0.3;
+ }
+
+.breadcrumbs-link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.breadcrumbs-item:nth-child(1)  {
+  position: relative;
+}
+
 .breadcrumbs-item:nth-child(1) .breadcrumbs-link {
-  background-image: url("../images/breadcrumbs-icon.svg");
-  background-repeat: no-repeat;
-  background-size: 12px 12px;
+  position: relative;
   display: block;
   width: 12px;
   height: 12px;
-  margin-right: 26px;
+  padding: 6px 8px 9px 8px;
+  margin-right: 10px;
 }
 
-.breadcrumbs-item:nth-child(1) .breadcrumbs-link::after {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 8px;
-  background-image: url("../images/nav-breadcrumbs.svg");
-  background-repeat: no-repeat;
-  margin-left: 23px;
+.breadcrumbs-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #ffffff;
+}
+
+.breadcrumbs-link + .breadcrumbs-icon {
+  fill: #ffffff;
+  fill-opacity: 0.3;
+  margin-left: 31px;
 }
 
 .breadcrumbs-item:nth-child(2) .breadcrumbs-link {
   display: block;
   font-size: 16px;
   line-height: 20.7px;
+  margin-top: 2px;
+  padding: 0 8px;
 }
 
 .catalog-filter {
@@ -735,6 +784,7 @@ body {
   font-size: 18px;
   line-height: 23.29px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .catalog-filter-group:nth-child(1) {
@@ -774,9 +824,22 @@ body {
   text-transform: uppercase;
   width: 160px;
   height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-apply:hover {
+  background-color: #68A2CA;
+}
+
+.button-apply:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-apply:focus {
+  outline: 3px solid #FFFFFF;
 }
 
 .button-reset {
@@ -786,6 +849,21 @@ body {
   line-height: 23.29px;
   font-weight: 400;
   border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:active {
+  opacity: 0.3;
+}
+
+.button-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .inner-background {
@@ -815,7 +893,24 @@ body {
   background-color: #ffffff;
   align-self: center;
   margin-right: 81px;
-  padding: 12px 0px 13px 19px;
+  padding: 10px 0px 13px 16px;
+  cursor: pointer;
+}
+
+.select-control:hover  {
+  border: 2px solid #83B3D3;;
+}
+
+.select-control:active:focus {
+  outline: none;
+  border: 2px solid #E6E6E6;
+  color: #333333;
+  opacity: 0.3;
+}
+
+.select-control:focus {
+  outline: none;
+  border: 2px solid #83B3D3;
 }
 
 .sorting-hotel {
@@ -831,14 +926,25 @@ body {
   display: flex;
 }
 
-.button-tile,
-.button-slideshow,
-.button-list {
-  min-width: 14px;
-  min-height: 12px;
-  padding: 17px 16px;
+.button-show {
+  min-width: 16px;
+  min-height: 14px;
+  padding: 15px 14px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+}
+
+.button-show:hover {
+  border-color: #83B3D3;
+}
+
+.button-show:focus {
+  outline: none;
+  border-color: #83B3D3;
+}
+
+.button-show:active {
+  border: 2px solid #000000;
 }
 
 .button-tile {
@@ -881,11 +987,24 @@ body {
 .hotel-card-link {
   color: #000000;
   text-decoration: none;
+  outline: none;
 }
 
 .hotel-card-image {
   display: block;
   margin-bottom: 16px;
+}
+
+.hotel-card-image:hover {
+  opacity: 0.6;
+}
+
+.hotel-card-image:active {
+  opacity: 0.3;
+}
+
+.hotel-card-link:focus .hotel-card-image {
+  outline: 3px solid #83B3D3;
 }
 
 .hotel-card-title {
@@ -930,16 +1049,47 @@ body {
   border-radius: 4px;
 }
 
+.hotel-card-button:hover {
+  background-color: #615048;
+}
+
+.hotel-card-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card-button:focus {
+  outline: 3px solid #83B3D3;;
+}
+
 .hotel-card-button[type="button"] {
   background-color: #83B3D3;
   font-family: "PT Sans", sans-serif;
   border: none;
   margin-left: 25.05px;
   width: 140.94px;
+  cursor: pointer;
+}
+
+.hotel-card-button[type="button"]:hover {
+  background-color: #68A2CA;
+  outline: 1px solid #756257;
+}
+
+.hotel-card-button[type="button"]:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: 1px solid #756257;
+}
+
+.hotel-card-button[type="button"]:focus {
+  outline: 3px solid #756257;
 }
 
 .hotel-list .hotel-card:nth-child(3) .hotel-card-button[type="button"] {
   background-color: #7DB54F;
+}
+
+.hotel-list .hotel-card:nth-child(3) .hotel-card-button[type="button"]:hover {
+  background-color: #6C9E42;
 }
 
 .hotel-card-stars {
@@ -1014,6 +1164,20 @@ body {
   padding: 17px;
   border-radius: 4px;
   margin-left: 218px;
+  cursor: pointer;
+}
+
+.pagination-show-more:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-show-more:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: 1px solid #756257;
+}
+
+.pagination-show-more:focus {
+  outline: 3px solid #756257;
 }
 
 .pagination-pages-wrapper {
@@ -1023,7 +1187,7 @@ body {
 
 .pagination {
   display: flex;
-  margin-right: 301px;
+  margin-right: 290px;
 }
 
 .pagination-link {
@@ -1040,6 +1204,18 @@ body {
   min-height: 55px;
   margin-right: 8px;
   border-radius: 4px;
+}
+
+.pagination-link:hover:not(.pagination-current) {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active:not(.pagination-current) {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-link:focus:not(.pagination-current) {
+  outline: 3px solid #756257;;
 }
 
 .pagination-current {
