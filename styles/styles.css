@@ -792,19 +792,95 @@ body {
 }
 
 .catalog-filter-group:nth-child(2) {
-  margin-right: 167px;
+  margin-right: 160px;
 }
 
 .catalog-filter-group:nth-child(3) {
   margin-right: 81px;
-  width: 287px; /* ширину поставил на время что бы отодвинуть кнопки */
+}
+
+.catalog-filter-group:nth-child(3) .catalog-filter-title {
+  padding-bottom: 34px;
+}
+
+.range-wrapper-inputs {
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  display: flex;
+}
+
+.range-wrapper {
+  padding: 12px 0px 9px 17px;
+}
+
+.range-wrapper:nth-child(2) {
+  border-left: 2px solid #FFFFFF;
+}
+
+.range-input {
+  font-size: 18px;
+  line-height: 23.29px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0);
+  width: 85px;
+  border: none;
+  padding: 0;
+}
+
+.range-input-inner {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.range-input-inner:nth-child(1) {
+  padding-right: 14px;
+}
+
+.range-input-inner:nth-child(2) {
+  padding-right: 17px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  top: 28px;
+}
+
+.range-bar {
+  position: absolute;
+  width: 227px;
+  height: 4px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -1px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .control-input {
   width: 20px;
   height: 20px;
   margin: 0;
-  padding: 0;
   margin-right: 19px;
 }
 
@@ -845,6 +921,8 @@ body {
 .button-reset {
   color: #ffffff;
   background-color: #83B3D300;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-size: 18px;
   line-height: 23.29px;
   font-weight: 400;
