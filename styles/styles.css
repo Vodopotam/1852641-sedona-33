@@ -73,7 +73,7 @@ body {
   color: #ffffff;
   width: 20px;
   height: 20px;
-  background-image: url("../images/green-ellipse .svg");
+  background-image: url("../images/green-ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -123,11 +123,11 @@ body {
   fill-opacity: 0.3;
 }
 
-.navigation-user .navigation-item:nth-child(3):hover .navigation-link {
+.navigation-item-user:nth-child(3):hover .navigation-link {
   background-color: #615048;
 }
 
-.navigation-user .navigation-item:nth-child(3):active .navigation-link {
+.navigation-item-user:nth-child(3):active .navigation-link {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -139,15 +139,15 @@ body {
   margin-right: 282px;
 }
 
-.navigation-user > .navigation-item:nth-child(1) .navigation-link,
-.navigation-user > .navigation-item:nth-child(2) .navigation-link {
+.navigation-item-user:nth-child(1) .navigation-link,
+.navigation-item-user:nth-child(2) .navigation-link {
   display: block;
   padding: 0;
   min-width: 42px;
   min-height: 66px;
 }
 
-.navigation-user .navigation-item:nth-child(3) .navigation-link {
+.navigation-item-user:nth-child(3) .navigation-link {
   color: #ffffff;
   background-color: #756257;
   font-size: 16px;
@@ -263,6 +263,26 @@ body {
   margin: 0;
 }
 
+.advantages-description {
+  align-self: center;
+}
+
+.advantages-wrapper > .advantages-description {
+  width: 220px;
+}
+
+.advantages-item:nth-child(2) > .advantages-description {
+  width: 180px;
+}
+
+.advantages-item:nth-child(3) > .advantages-description {
+  width: 250px;
+}
+
+.advantages-item:nth-child(4) > .advantages-description {
+  width: 250px;
+}
+
 .advantages-wrapper,
 .advantages-list > .advantages-item:nth-child(2),
 .advantages-list > .advantages-item:nth-child(3),
@@ -274,26 +294,26 @@ body {
   flex-direction: column;
 }
 
-.advantages-list > .advantages-item:nth-child(1) .advantages-title,
-.advantages-list > .advantages-item:nth-child(5) .advantages-title,
-.advantages-list > .advantages-item:nth-child(6) .advantages-title,
-.advantages-list > .advantages-item:nth-child(7) .advantages-title,
-.advantages-list > .advantages-item:nth-child(8) .advantages-title {
+.advantages-item:nth-child(1) .advantages-title,
+.advantages-item:nth-child(5) .advantages-title,
+.advantages-item:nth-child(6) .advantages-title,
+.advantages-item:nth-child(7) .advantages-title,
+.advantages-item:nth-child(8) .advantages-title {
   margin-top: 98px;
   margin-bottom: 29px;
 }
 
-.advantages-list > .advantages-item:nth-child(2) .advantages-title,
-.advantages-list > .advantages-item:nth-child(3) .advantages-title,
-.advantages-list > .advantages-item:nth-child(4) .advantages-title   {
+.advantages-item:nth-child(2) .advantages-title,
+.advantages-item:nth-child(3) .advantages-title,
+.advantages-item:nth-child(4) .advantages-title   {
   margin-bottom: 20px;
 }
 
-.advantages-list > .advantages-item:nth-child(1) .advantages-number,
-.advantages-list > .advantages-item:nth-child(5) .advantages-number,
-.advantages-list > .advantages-item:nth-child(6) .advantages-number,
-.advantages-list > .advantages-item:nth-child(7) .advantages-number,
-.advantages-list > .advantages-item:nth-child(8) .advantages-number {
+.advantages-item:nth-child(1) .advantages-number,
+.advantages-item:nth-child(5) .advantages-number,
+.advantages-item:nth-child(6) .advantages-number,
+.advantages-item:nth-child(7) .advantages-number,
+.advantages-item:nth-child(8) .advantages-number {
   margin-bottom: 30px;
 }
 
@@ -315,7 +335,7 @@ body {
   height: 384px;
 }
 
-.advantages-list > .advantages-item:nth-child(2) .advantages-title::before {
+.advantages-item:nth-child(2) .advantages-title::before {
   content: "";
   display: block;
   height: 72px;
@@ -333,7 +353,7 @@ body {
   height: 384px;
 }
 
-.advantages-list > .advantages-item:nth-child(3) .advantages-title::before {
+.advantages-item:nth-child(3) .advantages-title::before {
   content: "";
   display: block;
   height: 70px;
@@ -351,7 +371,7 @@ body {
   height: 384px;
 }
 
-.advantages-list > .advantages-item:nth-child(4) .advantages-title::before {
+.advantages-item:nth-child(4) .advantages-title::before {
   content: "";
   display: block;
   height: 76px;
@@ -1264,11 +1284,11 @@ body {
   outline: 3px solid #756257;
 }
 
-.hotel-list .hotel-card:nth-child(3) .hotel-card-button[type="button"] {
+.hotel-card:nth-child(3) .hotel-card-button[type="button"] {
   background-color: #7DB54F;
 }
 
-.hotel-list .hotel-card:nth-child(3) .hotel-card-button[type="button"]:hover {
+.hotel-card:nth-child(3) .hotel-card-button[type="button"]:hover {
   background-color: #6C9E42;
 }
 
@@ -1278,22 +1298,22 @@ body {
   margin-top: 26px;
 }
 
-.hotel-list .hotel-card:nth-child(1) .hotel-card-stars {
+.hotel-card:nth-child(1) .hotel-card-stars {
   background-image: url("../images/stars-four.svg");
   background-repeat: no-repeat;
 }
 
-.hotel-list .hotel-card:nth-child(2) .hotel-card-stars {
+.hotel-card:nth-child(2) .hotel-card-stars {
   background-image: url("../images/stars-three.svg");
   background-repeat: no-repeat;
 }
 
-.hotel-list .hotel-card:nth-child(3) .hotel-card-stars {
+.hotel-card:nth-child(3) .hotel-card-stars {
   background-image: url("../images/stars-two.svg");
   background-repeat: no-repeat;
 }
 
-.hotel-list .hotel-card:nth-child(4) .hotel-card-stars {
+.hotel-card:nth-child(4) .hotel-card-stars {
   background-image: url("../images/stars-two.svg");
   background-repeat: no-repeat;
 }
@@ -1544,7 +1564,7 @@ body {
   padding-top: 8px;
 }
 
-.field-group-wrapper .field-group:nth-child(2) > .field-group-title {
+.field-group-kids > .field-group-title {
   width: 54px;
 }
 
@@ -1611,8 +1631,8 @@ body {
   display: flex;
 }
 
-.field-group-wrapper .field-group:nth-child(1) > .auto-form-field,
-.field-group-wrapper .field-group:nth-child(2) > .auto-form-field {
+.field-group-wrapper .auto-form-field.field,
+.field-group-wrapper .auto-form-field.field {
   width: 133px;
 }
 
@@ -1620,7 +1640,7 @@ body {
   margin-right: 56px;
 }
 
-.field-group-wrapper .field-group:nth-child(2) .field-group-title{
+.field-group-kids .field-group-title{
   margin-right: 43px;
 }
 
