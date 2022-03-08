@@ -200,5 +200,50 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auto-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <span class="field-group-title">Дата заезда:</span>
+              <label class="visually-hidden" for="check-in">Дата заезда</label>
+              <input class="auto-form-field field" type="date" id="check-in" name="check-in" required>
+            </p>
+            <p class="field-group">
+              <span class="field-group-title">Дата выезда:</span>
+              <label class="visually-hidden" for="check-out">Дата выезда</label>
+              <input class="auto-form-field field" type="date" id="check-out" name="check-out" required>
+            </p>
+            <div class="field-group-wrapper">
+              <p class="field-group">
+                <span class="field-group-title">Взрослые:</span>
+                <label class="visually-hidden" for="adults">Взрослые</label>
+                <input class="auto-form-field field" type="number" id="adults" name="adults" value="2" min="0">
+              </p>
+              <p class="field-group">
+
+                <span class="field-group-title">Дети:</span>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <label class="visually-hidden" for="kids">Дети</label>
+                <input class="auto-form-field field" type="number" id="kids" name="kids" value="1" min="0">
+              </p>
+            </div>
+            <button class="button auto-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
